@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Services Pipeline Team Health Dashboard</title>
+<style type="text/css">
+
+body {
+    font-family: 'Helvetica';
+}
+.tile {
+    text-align: center;
+    margin: 20px 0 20px 20px;
+    padding: 0;
+    float: left;
+    border-radius: 12%;
+    padding: 22px;
+    height: 150px;
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.tile > span {
+    font-size: 60px;
+    display: block;
+}
+.failed {
+    background-color: #ca2323;
+    color: #eeeeee;
+}
+.success {
+    background-color: #09b15a;
+    color: #eeeeee;
+}
+.warning {
+    background-color: #ffb219;
+    color: #eeeeee;
+}
+.coming-soon {
+    background-color: #3333ff;
+    color: #eeeeee;
+}
+    
+em {
+    font-size: 0.8em;
+    display: block;
+    line-height: 1.2em;
+    color: rgba(255,255,255,0.7);
+    margin-top: 5px;
+}
+footer {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+h2 { 
+    clear: both;
+    padding-left: 20px;
+    color: #333;
+    margin-bottom: 0;
+}
+ 
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0;
+}
+    
+.half {
+    width: 46.9%;
+    display: inline-block;
+}
+    
+@media (max-width: 600px) {
+    .half {
+        width: 100%;
+    }
+}
+    
+.unit {
+    font-size: 0.5em;
+    display: inline-block;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Our Customers</h2>
+
+<div class="tile success">
+  <h3>PCF Metrics</h3>
+  <span>v1.3.2</span>
+</div>
+
+<div class="tile failed">
+  <h3>PCF Redis</h3>
+  <span>v1.1.0</span>
+</div>
+
+<div class="tile failed">
+  <h3>PCF RabbitMQ</h3>
+  <span>v1.1.8</span>
+</div>
+
+<div class="tile coming-soon">
+  <h3>PCF Gemfire</h3>
+  <span>TBD</span>
+</div>
+
+<div class="tile coming-soon">
+  <h3>PCF MySQL</h3>
+  <span>TBD</span>
+</div>
+
+<div class="tile coming-soon">
+  <h3>SCS</h3>
+  <span>TBD</span>
+</div>
+
+<footer>
+last updated: Oct 22 2016
+</footer>
+</body>
+</html>
